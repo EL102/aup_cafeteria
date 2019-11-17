@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<title>AUP Cafeteria Online Delivery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/pwet.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Games</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About Me</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">Mail</div>
+    <div class="w3-center w3-padding-16">Top 8 Games of all Time</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="img/sekiro.jpg" alt="Sandwich" style="width:100%">
+      <h3>1. Sekiro: Shadows Die Twice</h3>
+      <p>Sekiro is set in the Sengoku period – that fraught time in Japan’s history, ranging from the mid-15th century to the tail end of the 16th, in which the land was riven, and ravaged by war. It’s far back enough into the past that memory blurs and shifts into myth, and it’s become something of a Sengo-to, so to speak, for any game looking to mingle history and fantasy.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img/witchere.jpg" alt="Steak" style="width:100%">
+      <h3>2. The Witcher 3: Wild Hunt</h3>
+      <p>The Witcher 3: Wild Hunt is an action role-playing game with a third-person perspective. Players control Geralt of Rivia, a monster hunter known as a Witcher. Geralt walks, runs, rolls and dodges, and (for the first time in the series) jumps, climbs and swims. He has a variety of weapons, including bombs, a crossbow and two swords (one steel and one silver).</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img/dh2.jpg" alt="Cherries" style="width:100%">
+      <h3>3. Dishonored 2</h3>
+      <p>Dishonored 2 takes everything you loved about Dishonored and improves upon it without becoming bloated. It's a beautifully designed, layered game, stuffed with hidden gems and secret stories. Also you can stab people in mid air.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img/ds2.jpg" alt="Pasta and Wine" style="width:100%">
+      <h3>4. Dark Souls 2</h3>
+      <p>Dark Souls. That's the really hard one, right? Sure, but the difficulty is far from why it is so memorable. The freedom of choice when it comes to every aspect of your adventure, the rich lore of the world that makes everything have a purpose and the intelligent approach to multiplayer is what actually makes it. All of these factors are present in this long-awaited sequel.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="img/fc5.jpg" alt="Popsicle" style="width:100%">
+      <h3>5. Far Cry 5</h3>
+      <p>The charismatic John promises atonement for would-be Eden’s Gate recruits in Holland Valley, Faith manipulates the thoughts and realities of people along the Henbane River through the drug Bliss, and up in the Whitetail Mountains Jacob trains his religious soldiers in twisted trials.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img/portal.jpg" alt="Salmon" style="width:100%">
+      <h3>6. Portal 2</h3>
+      <p>It begins in what appears to be a motel room; a quaint little cubicle furnished with a bed, desk and the odd decorative object. You've been asleep for some time, hauled out of a mammoth slumber by an energetic banging on the door and a familiar voice. It's that Bristolian chap from the Barclays adverts, Ricky Gervais' pal - Stephen Merchant. Only here he's a spherical robot with a blinking blue eye - something known as a Personality Sphere.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img/monster.jpg" alt="Sandwich" style="width:100%">
+      <h3>7. Monster Hunter World</h3>
+      <p>As a member of the Fifth Fleet, the latest group of hunters to follow an elder dragon to a new world, you're tasked by the Research Commission to explore the land and study the new species of wyverns you encounter. For 'study' read 'bring 'em in, dead or alive', but the monsters won't go down without a fight either way.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="img/wolf.jpg" alt="Croissant" style="width:100%">
+      <h3>8. Wolfenstein 2: The New Colossus</h3>
+      <p>Wolfenstein 2 picks up right after the events of the first game, with former Allied forces soldier B.J. Blazkowicz and his fellow freedom fighters still looking to spill the blood of those persecuting the American people, abolishing the world of Nazi rule in the process. This is over 10 years after U.S.A.’s concession, though, and some Americans are happy under German rule.</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>About Me, The IT Student</h3><br>
+    <img src="img/pp.jpeg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>Jared M. Ibañez</b></h4>
+      <h6><i>With Passion For Real, Gaming experience</i></h6>
+      <p>My name is Jared Ibañez, a second year student at Adventist University of the Philippines studying Information Technology. 
+
+          Born at —and raised in Puting Kahoy, Silang, Cavite, I’ve basically lived my life exploring and widening my horizons in this small town of Cavite. I’ve engaged in many activities of this school: small group, choir, —-, you name it! However, when I was invited to play with the computer, I was hooked. It made me connect with millions of people across the globe enhancing our skills in terms of intellect and memory via video games.</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Sir, sorry po kung ngayon ko lang naipasa tong mga to. Nawala po sa isip ko HAHAHAHA. Sensya na po talaga sir</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="img/gta-vice-city.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">GTA Vice City Cheats</span><br>
+        </li>
+        <li class="w3-padding-16">
+          <img src="img/maxresdefault.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Barbie: Dress Up Game</span><br>
+          <span>Fave ko to hehehehehe</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Gaming</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">LifeStyle</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">FPS</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">China numba 2</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">PH numba 1</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Medieval</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Latest Games</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Steampunk</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken Dinner</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Open World</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Monsters</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Horror</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">RPG</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
